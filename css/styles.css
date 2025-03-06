@@ -1,0 +1,178 @@
+body{
+    background-color: #1695DA;
+    margin: 0 auto;
+    line-height: 20px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+div.title-box{
+    background-color: white;
+    position: absolute;
+    z-index: 999;
+    padding: 50px;
+    top: 180px;
+    box-shadow: -13px 13px 2px 1px rgba(0, 0, 0, 0.9);
+}
+
+header h1{
+    font-size: 80px;
+}
+
+header p{
+    font-size: 25px;
+}
+
+header h1,p, li{
+    font-family: 'Kenia', 'cursive';
+}
+
+.slider{
+    opacity: 0.5
+}
+
+/*slider*/
+div.slides{
+    display: flex;
+    flex-direction: row;
+    animation: glisse 15s infinite ease;
+    height: 720px;
+
+}
+
+@keyframes glisse{
+    0%{
+        transform: translateX(0);
+    }
+
+    10%{
+        transform: translateX(0);
+    }
+
+    33%{
+        transform: translateX(-500px);
+    }
+    66%{
+        transform: translateX(-500px);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.section-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-100px);
+}
+
+nav.menu{
+    width: calc(500px * 4);
+}
+
+nav.menu ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+nav.menu ul li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav.menu ul li:hover{
+    transform: scale(0.9);
+    transition: 0.2s all;
+}
+
+nav.menu ul li a{
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.nav-item{
+    padding: 50px;
+}
+
+.pizza{
+    background: url(../images/pizza-banner.jpg);
+    background-size: cover;
+}
+
+.salades{
+    background: url(../images/salad-banner.jpg);
+}
+
+.burger{
+    background: url(../images/burger-banner.jpg);
+}
+
+.boissons{
+    background: url(../images/boisson-banner.jpg);
+}
+
+/*sections plats*/
+.item{
+    background-color: white;
+    margin: 20px;
+    display: flex;
+    cursor: pointer;
+    width: 70%;
+}
+.item img{
+    transition: 0.3s all;
+}
+
+.item img:hover{
+    transform: scale(0.9);
+    transition: 0.3s all;
+}
+.item:hover{
+    transition: 3s all;
+    box-shadow: -8px 8px;
+}
+
+.item-infos{
+    padding: 20px;
+}
+
+section{
+    padding: 50px;
+    font-family: 'Martel', 'serif';
+}
+
+.item-infos h3{
+    font-size: 30px;
+}
+
+.item-infos hr{
+    margin: 10px 0 10px 0;
+    opacity: 0.5;
+}
+
+p.prix{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+section img{
+    width: 300px;
+}
+
+
